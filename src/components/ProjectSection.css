@@ -24,7 +24,7 @@
     grid-column: 1;
     grid-row: 1;
     font-family: 'Nohemi', 'Manrope', sans-serif;
-    font-size: clamp(34px, 4.8vw, 54px);
+    font-size: clamp(34px, 4.0vw, 50px);
     font-weight: 600;
     line-height: 1.15;
     letter-spacing: -0.8px;
@@ -100,10 +100,10 @@
 
 .project-image-box {
     position: relative;
-    width: 100%;
+    width: 90%;
     min-height: 560px;
     max-height: 680px;
-    height: clamp(520px, 40vw, 680px);
+    height: clamp(490px, 40vw, 640px);
     background-color: #141618;
     border-radius: 8px;
     overflow: hidden;
@@ -153,7 +153,7 @@
 .view-project-text {
     grid-area: 1 / 1;
     font-family: 'Nohemi', 'Manrope', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -257,7 +257,7 @@
 
 .project-info p {
     font-family: 'Manrope', sans-serif;
-    font-size: 19.5px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.7;
     color: #586069;
