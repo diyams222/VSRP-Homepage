@@ -21,7 +21,7 @@
 
 .feauture-title h2 {
     font-family: 'Nohemi', 'Manrope', sans-serif;
-    font-size: clamp(38px, 4.4vw, 56px);
+    font-size: clamp(34px, 4.0vw, 50px);
     font-weight: 600;
     line-height: 1.15;
     letter-spacing: -0.8px;
@@ -35,7 +35,7 @@
 
 .feauture-title p {
     font-family: 'Manrope', sans-serif;
-    font-size: 19.5px;
+    font-size: 16px;
     line-height: 1.68;
     color: #586069;
     max-width: 520px;
@@ -94,7 +94,7 @@
 
 .feauture-card h3 {
     font-family: 'Nohemi', 'Manrope', sans-serif;
-    font-size: 29px;
+    font-size: 24px;
     font-weight: 550;
     letter-spacing: -0.4px;
     color: #171b1e;
@@ -104,7 +104,7 @@
 
 .feauture-card p {
     font-family: 'Manrope', sans-serif;
-    font-size: 19.5px;
+    font-size: 16px;
     line-height: 1.6;
     color: #565c63;
     margin: 0;

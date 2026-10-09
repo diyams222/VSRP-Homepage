@@ -47,9 +47,9 @@
 
 .main-title {
   font-family: 'Nohemi', sans-serif;
-  font-size: clamp(52px, 5.8vw, 96px);
+  font-size: clamp(46px, 5.8vw, 82px);
   font-weight: 600;
-  line-height: 1.05;
+  line-height: 100%;
   letter-spacing: -0.5px;
   color: #ffffff;
 }
@@ -134,9 +134,9 @@
 
 .second-title {
   font-family: 'Nohemi', sans-serif;
-  font-size: clamp(52px, 5.8vw, 96px);
+  font-size: clamp(46px, 5.8vw, 82px);
   font-weight: 600;
-  line-height: 1.05;
+  line-height: 100%;
   letter-spacing: -0.5px;
   color: #ffffff;
 }
