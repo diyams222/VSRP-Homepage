@@ -8,13 +8,13 @@
 .logo-box {
     display: inline-flex;
     align-items: center;
-    gap: 15px;
+    gap: 2px;
     text-decoration: none;
     cursor: pointer;
 }
 
 .logo-img {
-    height: 56px;
+    height: 66px;
     width: auto;
     object-fit: contain;
     display: block;
@@ -29,14 +29,14 @@
 .logo-title {
     font-family: 'Nohemi', sans-serif;
     font-size: 45px;
-    font-weight: 850;
+    font-weight: 900;
     font-style: italic;
     line-height: 0.95;
     color: #ffffff;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     display: inline-block;
-    transform: skewX(-4deg);
+    transform: skewX(-2deg);
     transform-origin: bottom left;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -44,8 +44,9 @@
 
 .logo-subtitle {
     font-family: 'Nohemi', 'Manrope', sans-serif;
-    font-size: 16.5px;
-    font-style: italic;
+    font-size: 10px;
+    transform: skewX(-2deg);
+    /* font-style: italic; */
     font-weight: 400;
     color: #ffffff;
     letter-spacing: 0.3px;
