@@ -1,7 +1,7 @@
 .feautures-section {
     width: 100%;
     background-color: #f0f3f6;
-    padding: 130px 24px 150px;
+    padding: 130px clamp(32px, 5.5vw, 80px) 150px;
     box-sizing: border-box;
 }
 
@@ -112,7 +112,7 @@
 
 @media (max-width: 960px) {
     .feautures-section {
-        padding: 70px 18px 80px;
+        padding: 70px clamp(24px, 5vw, 40px) 80px;
     }
 
     .feauture-title {

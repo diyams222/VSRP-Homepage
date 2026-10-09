@@ -34,7 +34,7 @@
   max-width: 1760px;
   margin: 0 auto;
   min-height: 100vh;
-  padding: 10px 24px 24px;
+  padding: 16px clamp(32px, 5.5vw, 80px) clamp(24px, 3vh, 36px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -42,12 +42,12 @@
 }
 
 .hero-top {
-  margin-top: 190px;
+  margin-top: clamp(35px, 5.5vh, 65px);
 }
 
 .main-title {
   font-family: 'Nohemi', sans-serif;
-  font-size: clamp(70px, 7.5vw, 110px);
+  font-size: clamp(52px, 5.8vw, 96px);
   font-weight: 600;
   line-height: 1.05;
   letter-spacing: -0.5px;
@@ -60,14 +60,14 @@
 
 .title-solutions {
   display: inline-block;
-  margin-left: clamp(90px, 17vw, 290px);
+  margin-left: clamp(35px, 5.5vw, 95px);
 }
 
 .bottom-content {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 50px;
+  gap: clamp(30px, 4vw, 60px);
   margin-top: auto;
   padding-bottom: 0;
 }
@@ -76,8 +76,8 @@
   max-width: 530px;
   display: flex;
   flex-direction: column;
-  gap: 46px;
-  margin-bottom: 30px;
+  gap: clamp(24px, 3.5vh, 46px);
+  margin-bottom: clamp(10px, 2vh, 25px);
 }
 
 .description {
@@ -126,15 +126,15 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 34px;
-  margin-right: clamp(50px, 8vw, 160px);
-  margin-bottom: 0;
-  transform: translateY(clamp(-110px, -15vh, -180px));
+  gap: clamp(20px, 3vh, 34px);
+  margin-right: 0;
+  margin-bottom: clamp(10px, 2vh, 25px);
+  transform: none;
 }
 
 .second-title {
   font-family: 'Nohemi', sans-serif;
-  font-size: clamp(70px, 7.5vw, 110px);
+  font-size: clamp(52px, 5.8vw, 96px);
   font-weight: 600;
   line-height: 1.05;
   letter-spacing: -0.5px;
@@ -341,9 +341,24 @@
 }
 
 
+@media (max-width: 1200px) {
+  .main-title,
+  .second-title {
+    font-size: clamp(44px, 5vw, 68px);
+  }
+
+  .title-solutions {
+    margin-left: clamp(25px, 4vw, 60px);
+  }
+
+  .bottom-left {
+    max-width: 440px;
+  }
+}
+
 @media (max-width: 1024px) {
   .hero-inner {
-    padding: 15px 20px 30px;
+    padding: 15px clamp(24px, 5vw, 40px) 30px;
   }
 
   .bottom-content {
@@ -354,6 +369,7 @@
 
   .bottom-left {
     transform: none;
+    margin-bottom: 0;
   }
 
   .bottom-right {
@@ -364,5 +380,26 @@
 
   .title-solutions {
     margin-left: clamp(20px, 5vw, 50px);
+  }
+}
+
+@media (max-width: 600px) {
+  .main-title,
+  .second-title {
+    font-size: clamp(36px, 9vw, 46px);
+  }
+
+  .title-solutions {
+    margin-left: 0;
+    display: block;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+    gap: 16px;
   }
 }

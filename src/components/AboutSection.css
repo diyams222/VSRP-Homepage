@@ -3,7 +3,8 @@
     width: 100%;
     background-color: #f3f5f7;
     color: #1a1d20;
-    padding: 155px 24px 165px;
+    padding: 155px clamp(32px, 5.5vw, 80px) 165px;
+    box-sizing: border-box;
     overflow: hidden;
 }
 
@@ -221,7 +222,7 @@
 
 @media (max-width: 1024px) {
     .about-section {
-        padding: 70px 18px 80px;
+        padding: 70px clamp(24px, 5vw, 40px) 80px;
     }
 
     .about-container {

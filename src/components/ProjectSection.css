@@ -1,7 +1,7 @@
 .project-section {
     width: 100%;
     background-color: #ffffff;
-    padding: 100px 24px 120px;
+    padding: 100px clamp(32px, 5.5vw, 80px) 120px;
     box-sizing: border-box;
 }
 
@@ -274,7 +274,7 @@
 
 @media (max-width: 900px) {
     .project-section {
-        padding: 70px 24px 80px;
+        padding: 70px clamp(24px, 5vw, 40px) 80px;
     }
 
     .project-heading {

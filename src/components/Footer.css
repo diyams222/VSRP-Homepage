@@ -5,7 +5,7 @@
     background-color: #101114;
     color: #ffffff;
     overflow: hidden;
-    padding: clamp(140px, 11vw, 185px) 24px clamp(60px, 5vw, 85px);
+    padding: clamp(140px, 11vw, 185px) clamp(32px, 5.5vw, 80px) clamp(60px, 5vw, 85px);
     box-sizing: border-box;
     font-family: 'Nohemi', 'Manrope', sans-serif;
 }
@@ -333,7 +333,7 @@
 
 @media (max-width: 1024px) {
     .footer-section {
-        padding: 70px 24px 30px;
+        padding: 70px clamp(24px, 5vw, 40px) 30px;
     }
 
     .footer-main-grid {

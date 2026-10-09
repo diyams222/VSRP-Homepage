@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     background-color: #ffffff;
-    padding: 120px 24px 140px;
+    padding: 120px clamp(32px, 5.5vw, 80px) 140px;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -13,7 +13,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: calc(100% - 48px);
+    width: calc(100% - clamp(64px, 11vw, 160px));
     max-width: 1760px;
     border-top: 1.4px dotted #a8a9aa;
     pointer-events: none;
@@ -253,11 +253,11 @@
 
 @media (max-width: 768px) {
     .faq-section {
-        padding: 85px 18px 95px;
+        padding: 85px clamp(20px, 4vw, 32px) 95px;
     }
 
     .faq-section::before {
-        width: calc(100% - 36px);
+        width: calc(100% - clamp(40px, 8vw, 64px));
     }
 
     .faq-title {
