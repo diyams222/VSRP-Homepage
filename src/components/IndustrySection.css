@@ -1,0 +1,376 @@
+.industry-section {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 130px 24px 150px;
+    box-sizing: border-box;
+}
+
+.industry-main {
+    max-width: 1760px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.industry-title {
+    text-align: center;
+    max-width: 918px;
+    margin: 0 auto 60px;
+}
+
+.industry-title h2 {
+    font-family: 'Nohemi', 'Manrope', sans-serif;
+    font-size: clamp(34px, 4.2vw, 56px);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.8px;
+    color: #171b1e;
+    margin: 0 0 18px;
+}
+
+.title-orange {
+    color: #ff532a;
+}
+
+.industry-title p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 19.5px;
+    line-height: 1.68;
+    color: #586069;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.industry-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+    width: 100%;
+}
+
+.industry-card-left {
+    width: 100%;
+    min-width: 0;
+    background-color: #141618;
+    border-radius: 8px;
+    padding: 48px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 720px;
+    box-sizing: border-box;
+}
+
+.card-tag {
+    font-family: 'Nohemi', 'Manrope', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+}
+
+.industry-names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    text-align: center;
+    margin: auto 0;
+}
+
+.name-dimmed {
+    font-family: 'Nohemi', 'Manrope', sans-serif;
+    font-size: clamp(20px, 2.2vw, 28px);
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.22);
+    cursor: pointer;
+    transition: color 0.25s ease, transform 0.25s ease;
+    user-select: none;
+}
+
+.name-dimmed:hover {
+    color: rgba(255, 255, 255, 0.55);
+    transform: translateY(-2px);
+}
+
+.name-active {
+    font-family: 'Nohemi', 'Manrope', sans-serif;
+    font-size: clamp(38px, 4.4vw, 58px);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+    animation: textFadeIn 0.65s ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.name-active:hover {
+    transform: scale(1.02);
+}
+
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.industry-tabs {
+    width: 100%;
+    margin-top: 32px;
+}
+
+.tab-line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    border-top: 1.5px dotted rgba(255, 255, 255, 0.22);
+    margin-bottom: 20px;
+}
+
+.tab-indicator {
+    position: absolute;
+    top: -2px;
+    width: 20%;
+    height: 2px;
+    background-color: #ff532a;
+    border-radius: 1px;
+    transition: left 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    padding: 6px 4px;
+    text-align: center;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+.tab-btn:hover {
+    color: #ffffff;
+}
+
+.tab-btn.active {
+    color: #ff532a;
+    font-weight: 600;
+}
+
+.industry-card-right {
+    width: 100%;
+    min-width: 0;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 720px;
+    display: flex;
+    background-color: #171b1e;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+}
+
+.card-img-default,
+.card-img-hover {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.5s ease, transform 0.6s ease;
+}
+
+.card-img-default {
+    opacity: 1;
+    z-index: 1;
+}
+
+.card-img-hover {
+    opacity: 0;
+    z-index: 1;
+}
+
+.industry-card-right:hover .card-img-default {
+    opacity: 0;
+    transform: scale(1.02);
+}
+
+.industry-card-right:hover .card-img-hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+.jcb-icon {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.jcb-icon img {
+    width: 26px;
+    height: 20px;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+
+.capabilities-btn {
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    background: rgba(100, 107, 116, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 40px;
+    padding: 7px 7px 7px 20px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.capabilities-btn span {
+    font-family: 'Nohemi', 'Manrope', sans-serif;
+    font-size: 11.5px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.white-arrow {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #ff532a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.white-arrow img {
+    width: 14px;
+    height: 10px;
+    filter: brightness(0) invert(1);
+    display: block;
+}
+
+
+@media (max-width: 1180px) {
+    .industry-card-left,
+    .industry-card-right {
+        min-height: 640px;
+    }
+
+    .industry-card-left {
+        padding: 38px 28px 32px;
+    }
+
+    .tab-buttons {
+        gap: 4px;
+    }
+
+    .tab-btn {
+        font-size: 12.5px;
+    }
+}
+
+@media (max-width: 900px) {
+    .industry-section {
+        padding: 80px 24px 90px;
+    }
+
+    .industry-cards {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 28px;
+    }
+
+    .industry-card-left,
+    .industry-card-right {
+        width: 100%;
+        max-width: 760px;
+        min-height: 560px;
+    }
+
+    .tab-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .tab-line {
+        display: none;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .industry-section {
+        padding: 60px 20px 70px;
+    }
+
+    .industry-card-left,
+    .industry-card-right {
+        min-height: 440px;
+    }
+
+    .capabilities-btn {
+        bottom: 20px;
+        right: 20px;
+        padding: 5px 5px 5px 16px;
+    }
+
+    .capabilities-btn span {
+        font-size: 10.5px;
+    }
+
+    .white-arrow {
+        width: 32px;
+        height: 32px;
+    }
+
+    .jcb-icon {
+        top: 20px;
+        left: 20px;
+        width: 48px;
+        height: 48px;
+    }
+}

@@ -1,0 +1,232 @@
+.process-section {
+    position: relative;
+    min-height: 100vh;
+    padding: 85px 24px 60px;
+    background: #f1f5f6;
+    color: #242424;
+    overflow: hidden;
+}
+
+.process-main {
+    text-align: center;
+}
+
+.process-main h2 {
+    font-family: 'Nohemi', 'Manrope', sans-serif;
+    margin: 0;
+    font-size: clamp(42px, 4vw, 54px);
+    line-height: 0.98;
+    letter-spacing: -2px;
+    font-weight: 600;
+}
+
+.process-main h2 span {
+    color: #ff532a;
+    font-family: 'Nohemi', 'Manrope', sans-serif;
+}
+
+.process-main p {
+    font-family: 'Manrope', sans-serif;
+    margin-top: 22px;
+    margin-bottom: 0;
+    font-size: 19.5px;
+    line-height: 1.6;
+    color: #494848;
+}
+
+.process-content {
+    max-width: 1760px;
+    width: 100%;
+    margin: 80px auto 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.process-steps {
+    width: 50%;
+    margin-left: 0;
+}
+
+.process-step {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 34px;
+
+    min-height: 172px;
+}
+
+.process-step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 37px;
+    top: 76px;
+    height: 96px;
+    border-left: 1px dotted #858585;
+}
+
+.step-number {
+    font-family: 'Nohemi', 'Manrope', sans-serif;
+    width: 76px;
+    height: 76px;
+    flex-shrink: 0;
+    border: 1px dotted #858585;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #666;
+}
+
+.process-step.active .step-number {
+    border-color: #ff532a;
+    color: #ff532a;
+}
+
+.step-content {
+    padding-top: 14px;
+}
+
+.step-content h3 {
+    font-family: 'Nohemi', 'Manrope', sans-serif;
+    margin: 0 0 14px;
+    font-size: 33px;
+    line-height: 38px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+}
+
+.process-step.active h3 {
+    color: #ff532a;
+}
+
+.step-content p {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    font-size: 19.5px;
+    line-height: 1.55;
+    color: #555;
+}
+
+.process-image {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.process-image img {
+    width: 100%;
+    max-width: 820px;
+    height: auto;
+    display: block;
+}
+
+.process-scroll-arrow {
+    position: absolute;
+    right: 24px;
+    bottom: 55px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bottom-arrow-img {
+    width: 44px;
+    height: 44px;
+    display: block;
+}
+
+.scroll-writings {
+    font-family: 'Nohemi', 'Manrope', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+    color: #242424;
+}
+
+
+@media (max-width: 900px) {
+
+    .process-section {
+        padding: 70px 30px;
+    }
+
+    .process-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .process-steps,
+    .process-image {
+        width: 100%;
+    }
+
+    .process-image {
+        order: 2;
+    }
+
+    .process-steps {
+        order: 1;
+        margin-left: 0;
+    }
+
+    .process-scroll-arrow {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .process-section {
+        padding: 60px 20px;
+    }
+
+    .process-main h2 {
+        font-size: 38px;
+        letter-spacing: -1.5px;
+    }
+
+    .process-main p {
+        font-size: 14px;
+    }
+
+    .process-main p br {
+        display: none;
+    }
+
+    .process-step {
+        gap: 20px;
+    }
+
+    .step-number {
+        width: 52px;
+        height: 52px;
+        font-size: 15px;
+    }
+
+    .process-step:not(:last-child)::after {
+        left: 26px;
+        top: 52px;
+    }
+
+    .step-content h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .step-content p {
+        font-size: 14px;
+    }
+
+    .step-content p br {
+        display: none;
+    }
+}

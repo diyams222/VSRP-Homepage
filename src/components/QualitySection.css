@@ -1,0 +1,229 @@
+.quality-section {
+    position: relative;
+    width: 100%;
+    min-height: clamp(660px, 49vw, 780px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #0c0e11;
+    box-sizing: border-box;
+}
+
+.quality-bg-wrapper {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.quality-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 38%;
+    display: block;
+}
+
+.quality-overlay {
+    display: none;
+}
+
+.quality-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1760px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    box-sizing: border-box;
+}
+
+.quality-left {
+    flex: 1;
+    max-width: 580px;
+}
+
+.quality-title {
+    font-family: 'Nohemi', 'Manrope', sans-serif;
+    font-size: clamp(38px, 4vw, 56px);
+    font-weight: 600;
+    line-height: 1.18;
+    letter-spacing: -0.6px;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+
+.quality-title .title-orange {
+    color: #ff532a;
+}
+
+.quality-right {
+    flex: 1;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.quality-description {
+    font-family: 'Manrope', sans-serif;
+    font-size: 19.5px;
+    font-weight: 400;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.88);
+    margin: 0 0 34px 0;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+.quality-contact-btn {
+    background-color: #ff532a;
+    color: #ffffff;
+    border: none;
+    border-radius: 999px;
+    padding: 5px 5px 5px 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.quality-contact-btn:hover {
+    background-color: #e6451d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 83, 42, 0.45);
+}
+
+.contact-btn-text {
+    font-family: 'Nohemi', 'Manrope', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.contact-arrow-circle {
+    background-color: #ffffff;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-arrow {
+    width: 14px;
+    height: 10px;
+    position: absolute;
+    transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.contact-arrow.arrow-1 {
+    transform: translateX(0);
+}
+
+.contact-arrow.arrow-2 {
+    transform: translateX(-42px);
+}
+
+.quality-contact-btn:hover .contact-arrow.arrow-1 {
+    transform: translateX(42px);
+}
+
+.quality-contact-btn:hover .contact-arrow.arrow-2 {
+    transform: translateX(0);
+}
+
+@media (max-width: 1100px) {
+    .quality-container {
+        padding: 70px 24px;
+        gap: 36px;
+    }
+
+    .quality-title {
+        font-size: clamp(34px, 3.6vw, 48px);
+    }
+
+    .quality-description {
+        font-size: 16.5px;
+        margin-bottom: 28px;
+    }
+}
+
+@media (max-width: 900px) {
+    .quality-section {
+        min-height: auto;
+        padding: 80px 0;
+    }
+
+    .quality-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 36px;
+        padding: 0 24px;
+    }
+
+    .quality-left,
+    .quality-right {
+        max-width: 100%;
+    }
+
+    .quality-title {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    .quality-description {
+        font-size: 16.5px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .quality-section {
+        padding: 60px 0;
+    }
+
+    .quality-container {
+        padding: 0 20px;
+        gap: 28px;
+    }
+
+    .quality-title {
+        font-size: 32px;
+    }
+
+    .quality-description {
+        font-size: 15.5px;
+        line-height: 1.6;
+        margin-bottom: 24px;
+    }
+
+    .quality-contact-btn {
+        padding: 5px 5px 5px 24px;
+        gap: 14px;
+    }
+
+    .contact-btn-text {
+        font-size: 14px;
+    }
+
+    .contact-arrow-circle {
+        width: 40px;
+        height: 40px;
+    }
+}

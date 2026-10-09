@@ -1,0 +1,144 @@
+.feautures-section {
+    width: 100%;
+    background-color: #f0f3f6;
+    padding: 130px 24px 150px;
+    box-sizing: border-box;
+}
+
+.feautures-main {
+    max-width: 1760px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.feauture-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 48px;
+    margin-bottom: 70px;
+}
+
+.feauture-title h2 {
+    font-family: 'Nohemi', 'Manrope', sans-serif;
+    font-size: clamp(38px, 4.4vw, 56px);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.8px;
+    color: #171b1e;
+    margin: 0;
+}
+
+.feauture-title .title-orange {
+    color: #ff532a;
+}
+
+.feauture-title p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 19.5px;
+    line-height: 1.68;
+    color: #586069;
+    max-width: 520px;
+    margin: 6px 0 0;
+}
+
+.feauture-containers {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.feauture-card {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 48px 44px;
+    display: flex;
+    flex-direction: column;
+    min-height: 440px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feauture-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ff532a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 110px;
+    flex-shrink: 0;
+}
+
+.icon-circle img {
+    width: 38px;
+    height: 35px;
+    object-fit: contain;
+    display: block;
+}
+
+.card-divider {
+    width: 100%;
+    height: 1px;
+    border-top: 1.3px dotted #cdd4dc;
+    margin-bottom: 24px;
+}
+
+.feauture-card h3 {
+    font-family: 'Nohemi', 'Manrope', sans-serif;
+    font-size: 29px;
+    font-weight: 550;
+    letter-spacing: -0.4px;
+    color: #171b1e;
+    margin: 0 0 14px;
+    line-height: 1.25;
+}
+
+.feauture-card p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 19.5px;
+    line-height: 1.6;
+    color: #565c63;
+    margin: 0;
+}
+
+@media (max-width: 960px) {
+    .feautures-section {
+        padding: 70px 18px 80px;
+    }
+
+    .feauture-title {
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .feauture-containers {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feauture-card {
+        min-height: auto;
+    }
+
+    .feauture-card h3 {
+        font-size: 24px;
+    }
+
+    .feauture-card p {
+        font-size: 16px;
+    }
+
+    .icon-circle {
+        margin-bottom: 35px;
+    }
+}
