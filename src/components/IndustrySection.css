@@ -58,7 +58,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: 720px;
+    min-height: 626px;
     box-sizing: border-box;
 }
 
@@ -111,18 +111,6 @@
 
 .name-active:hover {
     transform: scale(1.02);
-}
-
-@keyframes textFadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .industry-tabs {
@@ -185,7 +173,7 @@
     position: relative;
     border-radius: 8px;
     overflow: hidden;
-    min-height: 720px;
+    min-height: 626px;
     display: flex;
     background-color: #171b1e;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
@@ -293,6 +281,17 @@
     display: block;
 }
 
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 @media (max-width: 1180px) {
     .industry-card-left,
