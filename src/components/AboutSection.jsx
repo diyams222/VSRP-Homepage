@@ -5,7 +5,7 @@ import shadowRight from '../assets/shadow-right.png';
 
 export default function AboutSection() {
     return (
-        <section className="about-section">
+        <section className="about-section" id="about">
 
             <div className="about-container">
 

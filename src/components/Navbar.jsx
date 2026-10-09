@@ -1,8 +1,8 @@
 import React from 'react';
 import './Navbar.css';
-
 import logo from "../assets/vsrp-logo.svg";
 import arrowIcon from "../assets/Vector.svg";
+import caretDown from "../assets/CaretDown.svg";
 
 export default function Navbar() {
     return (
@@ -19,7 +19,10 @@ export default function Navbar() {
             <div className='nav-right'>
                 <div className="nav-links">
                     <a href="#about">ABOUT</a>
-                    <a href="#industries">INDUSTRIES</a>
+                    <a href="#industries" className="nav-dropdown-link">
+                        <span>INDUSTRIES</span>
+                        <img src={caretDown} alt="" className="nav-caret-icon" />
+                    </a>
                     <a href="#products">PRODUCTS</a>
                     <a href="#projects">PROJECTS</a>
                     <a href="#insights">INSIGHTS</a>

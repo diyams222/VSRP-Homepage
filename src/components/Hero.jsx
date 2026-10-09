@@ -36,10 +36,19 @@ export default function Hero() {
                             and delivery, we make what you need, when you need it.
                         </p>
 
-                        <div className="scroll-down">
-                            <img src={arrowBottom} alt="scroll down" className="bottom-arrow-img" />
+                        
+                           <div
+                            className="scroll-down"
+                            onClick={() =>
+                                document.getElementById("about")?.scrollIntoView({
+                                    behavior: "smooth",
+                                })}>
+                            
+                            <img src={arrowBottom} alt="" className="bottom-arrow-img" />
                             <span className="scroll-writings">SCROLL DOWN</span>
-                        </div>
+                            </div>
+                        
+
                     </div>
 
                     <div className="bottom-right">
@@ -73,7 +82,7 @@ export default function Hero() {
                 </div>
             </div>
 
-           
+
         </section>
     );
 }

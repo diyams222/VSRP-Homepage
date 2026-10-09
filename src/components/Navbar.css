@@ -7,14 +7,14 @@
 
 .logo-box {
     display: inline-flex;
-    align-items: center;
-    gap: 2px;
+    align-items: flex-end;
+    gap: 4px;
     text-decoration: none;
     cursor: pointer;
 }
 
 .logo-img {
-    height: 66px;
+    height: 64px;
     width: auto;
     object-fit: contain;
     display: block;
@@ -23,20 +23,21 @@
 .logo-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-bottom: 2px;
 }
 
 .logo-title {
     font-family: 'Nohemi', sans-serif;
-    font-size: 45px;
+    font-size: 38px;
     font-weight: 900;
     font-style: italic;
-    line-height: 0.95;
+    line-height: 0.88;
     color: #ffffff;
-    letter-spacing: 0.5px;
+    letter-spacing: -1.2px;
     text-transform: uppercase;
     display: inline-block;
-    transform: skewX(-2deg);
+    transform: skewX(-12deg);
     transform-origin: bottom left;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -44,14 +45,16 @@
 
 .logo-subtitle {
     font-family: 'Nohemi', 'Manrope', sans-serif;
-    font-size: 10px;
-    transform: skewX(-2deg);
-    /* font-style: italic; */
-    font-weight: 400;
-    color: #ffffff;
-    letter-spacing: 0.3px;
-    margin-top: 5px;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 600;
     line-height: 1;
+    color: #ffffff;
+    letter-spacing: 0.1px;
+    margin-top: 3px;
+    display: inline-block;
+    transform: skewX(-12deg);
+    transform-origin: bottom left;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -74,6 +77,17 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     transition: color 0.2s ease;
+}
+
+.nav-dropdown-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-caret-icon {
+    width: 10px;
+    height: 10px;
 }
 
 .nav-right {
@@ -185,16 +199,20 @@
 }
 
 @media (max-width: 900px) {
+    .logo-box {
+        gap: 3px;
+    }
+
     .logo-img {
-        height: 44px;
+        height: 50px;
     }
 
     .logo-title {
-        font-size: 34px;
+        font-size: 30px;
     }
 
     .logo-subtitle {
-        font-size: 13.5px;
+        font-size: 10.5px;
     }
 
     .nav-links {

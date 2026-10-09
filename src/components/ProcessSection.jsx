@@ -84,7 +84,10 @@ export default function ProcessSection() {
                 </div>
             </div>
 
-            <div className="process-scroll-arrow">
+            <div className="process-scroll-arrow"  onClick={() =>
+                                document.getElementById("projects")?.scrollIntoView({
+                                    behavior: "smooth",
+                                })}>
                 <img src={arrowBottom} alt="scroll down" className="bottom-arrow-img" />
                 <span className="scroll-writings">SCROLL DOWN</span>
             </div>

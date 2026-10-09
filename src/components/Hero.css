@@ -159,7 +159,7 @@
   align-items: center;
   gap: 16px;
   font-weight: 600;
-  font-size: 17.5px;
+  font-size: 14px;
   letter-spacing: 0.8px;
   cursor: pointer;
   overflow: hidden;
@@ -285,12 +285,12 @@
 
 .work-text.text-1 {
   transform: translateY(0);
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .work-text.text-2 {
   transform: translateY(100%);
-  font-size: 16px;
+  font-size: 14px;
 
 }
 
