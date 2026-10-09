@@ -101,7 +101,7 @@
 .project-image-box {
     position: relative;
     width: 100%;
-    height: clamp(320px, 35vw, 480px);
+    height: clamp(360px, 37vw, 520px);
     background-color: #141618;
     border-radius: 8px;
     overflow: hidden;
@@ -266,7 +266,7 @@
 
 @media (max-width: 1024px) {
     .project-image-box {
-        height: 360px;
+        height: 400px;
     }
 }
 
@@ -306,7 +306,7 @@
     }
 
     .project-image-box {
-        height: 260px;
+        height: 280px;
     }
 
     .project-info h3 {

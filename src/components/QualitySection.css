@@ -52,7 +52,7 @@
 
 .quality-title {
     font-family: 'Nohemi', 'Manrope', sans-serif;
-    font-size: clamp(38px, 4vw, 56px);
+    font-size: clamp(34px, 4.0vw, 50px);
     font-weight: 600;
     line-height: 1.18;
     letter-spacing: -0.6px;
@@ -75,8 +75,8 @@
 
 .quality-description {
     font-family: 'Manrope', sans-serif;
-    font-size: 19.5px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 1.65;
     color: rgba(255, 255, 255, 0.88);
     margin: 0 0 34px 0;
@@ -88,7 +88,7 @@
     color: #ffffff;
     border: none;
     border-radius: 999px;
-    padding: 5px 5px 5px 30px;
+    padding: 5px 4px 5px 30px;
     display: inline-flex;
     align-items: center;
     gap: 18px;
@@ -105,7 +105,7 @@
 
 .contact-btn-text {
     font-family: 'Nohemi', 'Manrope', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.8px;
     color: #ffffff;
@@ -114,8 +114,8 @@
 
 .contact-arrow-circle {
     background-color: #ffffff;
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     position: relative;
     overflow: hidden;

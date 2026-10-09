@@ -46,7 +46,6 @@ export default function Footer() {
                             For over 20 years, VSRP has delivered engineered rubber solutions built around the unique requirements of Australian businesses.
                         </p>
 
-                        {/* Static Social Icons */}
                         <div className="footer-social-links">
                             <div className="social-icon-box" aria-label="Instagram">
                                 <img src={instaIcon} alt="Instagram" />
