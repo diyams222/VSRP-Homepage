@@ -81,7 +81,7 @@
 }
 
 .description {
-  font-size: 19.5px;
+  font-size: 16.5px;
   line-height: 1.6;
   color: #cfd4d8;
   font-weight: 500;
@@ -103,8 +103,8 @@
 }
 
 .scroll-down .bottom-arrow-img {
-  width: 48px;
-  height: 48px;
+  width: 34px;
+  height: 34px;
   display: block;
   filter: brightness(0) invert(1);
   transition: transform 0.25s ease;
@@ -116,7 +116,7 @@
 
 .scroll-down .scroll-writings {
   font-family: 'Nohemi', 'Manrope', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 1.2px;
   color: #ffffff;
@@ -342,6 +342,7 @@
 
 
 @media (max-width: 1200px) {
+
   .main-title,
   .second-title {
     font-size: clamp(44px, 5vw, 68px);
@@ -384,6 +385,7 @@
 }
 
 @media (max-width: 600px) {
+
   .main-title,
   .second-title {
     font-size: clamp(36px, 9vw, 46px);

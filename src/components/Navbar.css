@@ -65,7 +65,7 @@
 .nav-links a {
     font-family: 'Nohemi', sans-serif;
     color: #e5e5e5;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 1px;
@@ -143,8 +143,8 @@
 
 .arrow-circle {
     background-color: #ffffff;
-    width: 52px;
-    height: 52px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     position: relative;
     overflow: hidden;
