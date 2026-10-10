@@ -192,6 +192,10 @@
     transform: translateX(0);
 }
 
+.hamburger-btn { 
+    display: none; 
+}
+
 @media (max-width: 1200px) {
     .nav-links {
         gap: 32px;
@@ -214,8 +218,42 @@
     .logo-subtitle {
         font-size: 10.5px;
     }
-
+    .navbar { 
+        justify-content: space-between; 
+        position: relative; 
+    }
+    .hamburger-btn { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 5px; 
+        padding: 5px; 
+        background: none; 
+        border: none; 
+        cursor: pointer; 
+        z-index: 1002; 
+    }
+    .hamburger-line { 
+        width: 25px; 
+        height: 2px; 
+        background: white; 
+    }
+    .nav-right { 
+        position: fixed; 
+        inset: 0; 
+        background: #111; 
+        display: none; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        gap: 25px; 
+        z-index: 1001; 
+    }
+    .nav-right.nav-open { 
+        display: flex; 
+    }
     .nav-links {
-        gap: 20px;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 22px;
     }
 }

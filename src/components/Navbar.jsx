@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import logo from "../assets/vsrp-logo.svg";
 import arrowIcon from "../assets/Vector.svg";
 import caretDown from "../assets/CaretDown.svg";
 
 export default function Navbar() {
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return (
         <header className="navbar">
 
@@ -16,7 +19,19 @@ export default function Navbar() {
                 </div>
             </a>
 
-            <div className='nav-right'>
+            <button
+                className={`hamburger-btn ${isMenuOpen ? 'open' : ''}`}
+                onClick={() => setIsMenuOpen(prev => !prev)}
+                aria-label="Toggle navigation"
+                aria-expanded={isMenuOpen}
+                type="button"
+            >
+                <span className="hamburger-line"></span>
+                <span className="hamburger-line"></span>
+                <span className="hamburger-line"></span>
+            </button>
+
+            <div className={`nav-right ${isMenuOpen ? 'nav-open' : ''}`}>
                 <div className="nav-links">
                     <a href="#about">ABOUT</a>
                     <a href="#industries" className="nav-dropdown-link">
