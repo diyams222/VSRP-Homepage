@@ -50,6 +50,11 @@
     transition: background-color 0.25s ease, transform 0.2s ease;
     flex-shrink: 0;
     align-self: start;
+    width: fit-content;
+    min-width: 0;
+    justify-self: start;
+    box-sizing: border-box;
+
 }
 
 .view-all-project-btn:hover {
