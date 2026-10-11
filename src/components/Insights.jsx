@@ -58,9 +58,19 @@ export default function Insights() {
                             <div className="insight-content-card">
                                 <h3 className="insight-card-title">{item.title}</h3>
                                 <a href={item.link} className="view-detail-link">
-                                    <span className="detail-text">VIEW DETAIL</span>
-                                    <span className="detail-arrow">→</span>
+                                    <span className="detail-text-wrapper">
+                                        <span className="detail-text">VIEW DETAIL</span>
+                                    </span>
+
+
+                                    <span className="detail-arrow-wrapper">
+                                        <img src={arrowIcon} alt="arrow" className="detail-arrow arrow-1" />
+                                        <img src={arrowIcon} alt="arrow" className="detail-arrow arrow-2" />
+                                    </span>
+
+
                                 </a>
+
                             </div>
                         </article>
                     ))}

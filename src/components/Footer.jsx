@@ -68,6 +68,11 @@ export default function Footer() {
                     </div>
 
                     <div className="footer-right-content">
+                        <div className="footer-divider-row footer-divider-top">
+                            <div className="footer-divider-line" />
+                            <div className="footer-divider-line" />
+                        </div>
+
                         <div className="footer-nav-columns">
                             <div className="footer-nav-block">
                                 <h4 className="footer-heading">COMPANY</h4>
@@ -93,7 +98,10 @@ export default function Footer() {
                             </div>
                         </div>
 
-                        <div className="footer-divider-dotted" />
+                        <div className="footer-divider-row">
+                            <div className="footer-divider-line" />
+                            <div className="footer-divider-line" />
+                        </div>
 
                         <div className="footer-info-row">
                             <div className="footer-nav-block footer-contact-block">
