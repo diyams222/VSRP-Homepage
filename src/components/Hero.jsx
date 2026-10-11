@@ -17,11 +17,12 @@ export default function Hero() {
                 <Navbar />
 
                 <div className="hero-top">
-                    <h1 className="main-title">
-                        Custom Rubber
-                        <br />
-                        <span className="title-solutions">Solutions<span className="dot">.</span></span>
-                    </h1>
+                    <div className="title-wrapper">
+                        <h1 className="main-title">Custom Rubber</h1>
+                        <h1 className="main-title title-second-line">
+                            Solutions<span className="dot">.</span>
+                        </h1>
+                    </div>
                 </div>
 
                 <div className="bottom-content">
@@ -36,18 +37,18 @@ export default function Hero() {
                             and delivery, we make what you need, when you need it.
                         </p>
 
-                        
-                           <div
+
+                        <div
                             className="scroll-down"
                             onClick={() =>
                                 document.getElementById("about")?.scrollIntoView({
                                     behavior: "smooth",
                                 })}>
-                            
+
                             <img src={arrowBottom} alt="" className="bottom-arrow-img" />
                             <span className="scroll-writings">SCROLL DOWN</span>
-                            </div>
-                        
+                        </div>
+
 
                     </div>
 
