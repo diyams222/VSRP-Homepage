@@ -50,7 +50,8 @@
   flex-direction: column;
   align-items: flex-end;
   width: fit-content;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  margin-top: clamp(50px, 7vh, 80px);
 }
 
 .main-title {
@@ -142,7 +143,8 @@
   gap: clamp(24px, 3.5vh, 40px);
   margin-right: 0;
   /* margin-bottom: clamp(28px, 4vh, 50px); */
-  margin-bottom: clamp(40px, 5vh, 65px);
+  /* margin-bottom: clamp(40px, 5vh, 65px); */
+  margin-bottom: clamp(55px, 7vh, 85px);
   transform: none;
 }
 
